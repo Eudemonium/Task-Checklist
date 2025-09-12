@@ -32,11 +32,16 @@ const baroKiTeerData = {
 // --- Task Data ---
 const tasks = {
     daily: [
-        { id: 'daily_login', text: 'Log in: Collect the daily login reward.' },
-        { id: 'daily_craft_forma', text: 'Crafting (Forma): Start building a new Forma (and collect finished ones).' },
-        { id: 'daily_craft_other', text: 'Crafting (Other): Craft other daily resources/items using reusable blueprints (check Foundry/companion app).' },
-        { id: 'daily_syndicate_gain', text: 'Syndicates (Orbiter): Gain daily standing cap with your pledged Syndicate(s).' },
-        { id: 'daily_syndicate_spend', text: 'Syndicates (Orbiter - Spend): If maxed on standing, spend it (Relic packs, Vosfor packs, etc.).' },
+        { 
+            id: 'daily_syndicate_parent', 
+            text: 'Syndicates (Orbiter)' ,
+            isParent: true,
+            subtasks: [
+                { id: 'daily_syndicate_gain', text: 'Gain Daily Standing' },
+                { id: 'daily_syndicate_tasks', text: 'Complete Daily tasks.' },
+                { id: 'daily_syndicate_spend', text: 'If maxed on standing, spend it (Relic packs, Vosfor packs, etc.).' },
+                ]
+        },
         {
             id: 'daily_world_syndicate_parent',
             text: 'World Syndicates (Standing)',
@@ -55,9 +60,18 @@ const tasks = {
                 { id: 'daily_world_syndicate_hex', text: 'The Hex (Höllvania Central Mall)' }
             ]
         },
-        { id: 'daily_dark_sector', text: 'Dark Sector Mission (Early Game): Complete one Dark Sector mission first for double credits (if needed & pre-Index).' },
+        { 
+            id: 'daily_nightmare_parent',
+            text: 'Nightmare Alerts (Hammer shot)',
+            isParent: true,
+            subtasks: [
+                {id: 'daily_nightmare_mercury', text: 'Mercury' },
+                {id: 'daily_nightmare_venus', text: 'Venus' },
+                {id: 'daily_nightmare_earth', text: 'Earth' },
+                {id: 'daily_nightmare_mars', text: 'Mars' }
+                ]
+        },
         { id: 'daily_sortie', text: 'Sortie: Complete the 3 daily Sortie missions (requires The War Within).' },
-        { id: 'daily_focus', text: 'Focus: Max out daily Focus gain (e.g., via Sanctuary Onslaught) (requires The Second Dream).' },
         { id: 'daily_steel_path', text: 'Steel Path Incursions: Complete daily Steel Path missions for Steel Essence (requires Steel Path unlocked).' }
     ],
     weekly: [

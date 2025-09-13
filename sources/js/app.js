@@ -43,35 +43,35 @@ const tasks = {
                 {id: 'daily_nightmare_mars', text: 'Mars' }
                 ]
         },
+        { 
+            id: 'daily_simaris_parent', 
+            text: 'Cephalon Simaris (Relay)',
+            isParent: true,
+            subtasks: [
+                { id: 'daily_simaris_target', text: 'Synthesis Target' },
+                { id: 'daily_simaris_scan', text: 'Daily Standing' },
+                { id: 'daily_simaris_claim', text: 'Claim Target rewards' }
+            ]
+        },
         {
             id: 'daily_world_syndicate_parent',
             text: 'World Syndicates (Standing)',
             isParent: true,
             subtasks: [
-                { 
-                    id: 'daily_world_syndicate_simaris', 
-                    text: 'Cephalon Simaris (Relay)',
-                    isParent: true,
-                    subtasks: [
-                        { id: 'daily_simaris_target', text: 'Synthesis Target' },
-                        { id: 'daily_simaris_scan', text: 'Max standing from scanning' },
-                        { id: 'daily_simaris_claim', text: 'Claim Target rewards' }
-                    ]
-                },
+                { id: 'daily_world_syndicate_hex', text: 'The Hex (Höllvania Central Mall)' },
+                { id: 'daily_world_syndicate_cavia', text: 'Cavia (Sanctum Anatomica)' },
+                { id: 'daily_world_syndicate_entrati', text: 'Entrati (Necralisk)' },
+                { id: 'daily_world_syndicate_holdfasts', text: 'The Holdfasts (Chrysalith)' },
+                { id: 'daily_world_syndicate_necraloid', text: 'Necraloid (Necralisk)' },
                 { id: 'daily_world_syndicate_ostron', text: 'Ostron (Cetus)' },
                 { id: 'daily_world_syndicate_quills', text: 'The Quills (Cetus)' },
                 { id: 'daily_world_syndicate_solaris', text: 'Solaris United (Fortuna)' },
                 { id: 'daily_world_syndicate_vox', text: 'Vox Solaris (Fortuna)' },
                 { id: 'daily_world_syndicate_ventkids', text: 'Ventkids (Fortuna)' },
-                { id: 'daily_world_syndicate_entrati', text: 'Entrati (Necralisk)' },
-                { id: 'daily_world_syndicate_necraloid', text: 'Necraloid (Necralisk)' },
-                { id: 'daily_world_syndicate_holdfasts', text: 'The Holdfasts (Chrysalith)' },
-                { id: 'daily_world_syndicate_cavia', text: 'Cavia (Sanctum Anatomica)' },
-                { id: 'daily_world_syndicate_hex', text: 'The Hex (Höllvania Central Mall)' }
             ]
         },
         { id: 'daily_sortie', text: 'Sortie: Complete the 3 daily Sortie missions (requires The War Within).' },
-        { id: 'daily_nightwave', text: 'Daily Nightwave tasks' },
+        { id: 'daily_nightwave', text: 'Nightwave Daily tasks' },
         { 
             id: 'daily_syndicate_parent', 
             text: 'Syndicates (Orbiter)' ,
@@ -82,7 +82,8 @@ const tasks = {
                 { id: 'daily_syndicate_spend', text: 'If maxed on standing, spend it (Relic packs, Vosfor packs, etc.).' },
                 ]
         },
-        { id: 'daily_steel_path', text: 'Steel Path Incursions: Complete daily Steel Path missions for Steel Essence (requires Steel Path unlocked).' }
+        { id: 'daily_steel_path', text: 'Steel Path Incursions: Complete daily Steel Path missions for Steel Essence (requires Steel Path unlocked).' },
+        { id: 'daily_kim_messages', text: 'KIM messages' }
     ],
     weekly: [
         { id: 'weekly_nightwave_complete', text: 'Nightwave: Complete relevant weekly Nightwave missions.' },

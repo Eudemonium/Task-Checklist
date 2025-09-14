@@ -89,7 +89,7 @@ const tasks = {
         { id: 'weekly_nightwave_complete', text: 'Nightwave: Complete relevant weekly Nightwave missions.' },
         { id: 'weekly_nightwave_spend', text: 'Nightwave (Spend): Spend Nightwave credits if needed (Aura mods, Catalysts/Reactors, etc.).' },
         { id: 'weekly_ayatan', text: 'Ayatan Treasure Hunt: Complete Maroo\'s weekly mission for an Ayatan Sculpture (Maroo\'s Bazaar)' },
-        { id: 'weekly_clem', text: 'Help Clem: Help Clem with his weekly survival, or he will die. (Relay)' },
+        { id: 'weekly_coda', text: 'Technocyte Coda' },
         { id: 'weekly_kahl_garrison', text: 'Weekly Break Narmer Mission: Complete Kahl\'s weekly mission for Stock (requires Veilbreaker).' },
         { id: 'weekly_iron_wake', text: 'Iron Wake (Paladino): Trade Riven Slivers with Paladino (requires The Chains of Harrow).' },
         { id: 'weekly_yonta', text: 'Archimedian Yonta (Zariman): Buy weekly Kuva with Voidplumes.' },
